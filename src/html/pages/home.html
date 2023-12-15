@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Whatsall">
+
+	<title>Whatsall - Bulk Whatsapp Messaging Software</title>
+
+	<link href="../../css/pages/home.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="home.html">
+          <span class="align-middle">Whatsall</span>
+        </a>
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Whatsall
+					</li>
+
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="home.html">
+              <i class="align-middle" data-feather="home"></i> <span class="align-middle">Home</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="./dashboard.html">
+              <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+            </a>
+					</li>
+
+					<!-- <li class="sidebar-item">
+						<a class="sidebar-link" href="./profile.html">
+              <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
+            </a>
+					</li> -->
+
+
+
+					<li class="sidebar-header">
+						Groups
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="./contacts/contact-groups.html">
+              <i class="align-middle" data-feather="phone"></i> <span class="align-middle">Contact Groups</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="./messages/message-groups.html">
+              <i class="align-middle" data-feather="message-square"></i> <span class="align-middle">Message Groups</span>
+            </a>
+					</li>
+<!-- 
+
+					<li class="sidebar-header">
+						Reports
+					</li> -->
+
+					<!-- <li class="sidebar-item">
+						<a class="sidebar-link" href="./reports/failure-report.html">
+              <i class="align-middle" data-feather="alert-triangle"></i> <span class="align-middle">Failure Report</span>
+            </a>
+					</li> -->
+
+					<!-- <li class="sidebar-item">
+						<a class="sidebar-link" href="./reports/usage-report.html">
+              <i class="align-middle" data-feather="bar-chart-2"></i> <span class="align-middle">Usage Report</span>
+            </a>
+					</li> -->
+
+					<li class="sidebar-header">
+						About
+					</li>
+
+
+					<li class="sidebar-item">
+						<a class="sidebar-link externalLink" href="https://whatsallsoftware.com/features">
+              <i class="align-middle" data-feather="award"></i> <span class="align-middle">Features</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link externalLink" href="https://whatsallsoftware.com/faqs">
+              <i class="align-middle" data-feather="help-circle"></i> <span class="align-middle">FAQs</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link externalLink" href="https://whatsallsoftware.com/contact">
+              <i class="align-middle" data-feather="phone-call"></i> <span class="align-middle">Contact</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link externalLink" href="https://whatsallsoftware.com/terms-and-conditions">
+              <i class="align-middle" data-feather="file-text"></i> <span class="align-middle">Terms and Conditions</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link externalLink" href="https://whatsallsoftware.com/privacy-policy">
+              <i class="align-middle" data-feather="file-text"></i> <span class="align-middle">Privacy Policy</span>
+            </a>
+					</li>
+
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="#">
+              				<i class="align-middle" data-feather="share-2"></i> <span class="align-middle">Share</span>
+            			</a>
+					</li>
+					
+					<li class="sidebar-header">
+						Profile
+					</li>
+					
+					<li class="sidebar-item">
+						<a onClick="logOut()" class="sidebar-link" href="#">
+              <i class="align-middle" data-feather="log-out"></i> <span class="align-middle">Logout</span>
+            </a>
+					</li>
+
+				</ul>
+
+
+
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+          <i class="hamburger align-self-center"></i>
+        </a>
+
+			</nav>
+
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<h1 class="h3 mb-3"><strong>Whatsall</strong> Dashboard</h1>
+
+					<div class="row">
+						<div class="col-xl-6 col-xxl-5 d-flex">
+							<div class="w-100">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="card">
+											<div class="card-body">
+												<div class="row">
+													<div class="col mt-0">
+														<h5 class="card-title">License Valid Until</h5>
+													</div>
+
+													<div class="col-auto">
+														<div class="stat text-primary">
+															<i class="align-middle" data-feather="calendar"></i>
+														</div>
+													</div>
+												</div>
+												<h1 class="mt-1 mb-3 licence-validity" id="license_validity">0</h1>
+
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-body">
+												<div class="row">
+													<div class="col mt-0">
+														<h5 class="card-title">Total Contact Groups</h5>
+													</div>
+
+													<div class="col-auto">
+														<div class="stat text-primary">
+															<i class="align-middle" data-feather="users"></i>
+														</div>
+													</div>
+												</div>
+												<h1 class="mt-1 mb-3 total-contacts-count" id="total-contact-groups">0</h1>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="card">
+											<div class="card-body">
+												<div class="row">
+													<div class="col mt-0">
+														<h5 class="card-title">Total Messages Sent</h5>
+													</div>
+
+													<div class="col-auto">
+														<div class="stat text-primary">
+															<i class="align-middle" data-feather="message-square"></i>
+														</div>
+													</div>
+												</div>
+												<h1 class="mt-1 mb-3 total-messages-count" id="total-messages-count">0</h1>
+
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-body">
+												<div class="row">
+													<div class="col mt-0">
+														<h5 class="card-title">Total Message Groups</h5>
+													</div>
+
+													<div class="col-auto">
+														<div class="stat text-primary">
+															<i class="align-middle" data-feather="message-square"></i>
+														</div>
+													</div>
+												</div>
+												<h1 class="mt-1 mb-3 message-group-count" id="total-message-groups">0</h1>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xl-6 col-xxl-7">
+							<div class="card flex-fill w-100">
+								<div class="card-header">
+
+									<h5 class="card-title mb-0">Bulk Whatsapp Messaging - Whatsall</h5>
+								</div>
+								<div class="card-body py-3">
+									<div class="chart chart-sm">
+											<p>Select Contact & Message Group from Below list to send messages.</p>
+											<select class="form-select mb-3" id="contact-groups-select">
+							          <option selected>Select Contact Group</option>
+							        </select>
+											<select class="form-select mb-3" id="message-groups-select">
+							          <option selected>Select Message Group</option>
+							        </select><br>
+											<div class="text-center">
+											<button type="submit" class="btn btn-save-contact-group btn-info" onclick="send_messages()">Send Messages</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="row">
+						<div class="col-xl-7 col-xxl-8 d-flex">
+
+
+
+							<div class="card flex-fill">
+								<div class="card-header">
+
+									<h5 class="card-title mb-0">Help Center</h5>
+								</div>
+								<table class="table table-hover my-0">
+									<thead>
+										<tr>
+											<th>Frequently Asked Questions...</th>
+
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><a class="externalLink" href="https://www.youtube.com/watch?v=XBS3o2jQGzU">How to send customised messages?</a></td>
+										</tr>
+										<tr>
+											<td><a class="externalLink" href="https://www.youtube.com/watch?v=NKJc-qEDrXQ&t=0s">How can I send messages from a different phone number?</a></td>
+										</tr>
+										<tr>
+											<td><a class="externalLink" href="https://www.youtube.com/watch?v=YqsFE4gD4Kw">Can I send images / documents?</a></td>
+										</tr>
+										<tr>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+
+								
+								<table class="table table-hover my-0">
+									<thead>
+										<tr>
+											<th>Upcoming Features</th>
+
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Extract contacts from groups</td>
+										</tr>
+										
+										<tr>
+											<td>Open whatsapp for individual contact</td>
+										</tr>
+
+										
+										<tr>
+											<td>Admin Panel for organizations</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="col-xl-5 col-xxl-4 d-flex">
+							
+							<div class="w-100">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="card">
+											<div class="card-body">
+												<div class="row">
+													<div class="col mt-0">
+														<h5 class="card-title">Setup Guide</h5>
+													</div>
+
+													<!-- <div class="col-auto">
+														<div class="stat text-primary">
+															<i class="align-middle" data-feather="calendar"></i>
+														</div>
+													</div> -->
+												</div>
+												<h1 class="mt-1 mb-3 licence-validity" id="license_validity"><iframe src="https://www.youtube.com/embed/u0CSRwgq91w" frameborder="0" allowfullscreen></iframe></h1>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-12">
+										<div class="card">
+											<div class="card-body">
+												<div class="row">
+													<div class="col mt-0">
+														<h5 class="card-title">Demo</h5>
+													</div>
+
+													<!-- <div class="col-auto">
+														<div class="stat text-primary">
+															<i class="align-middle" data-feather="message-square"></i>
+														</div>
+													</div> -->
+												</div>
+												<h1 class="mt-1 mb-3 total-messages-count" id="total-messages-count"><iframe src="https://www.youtube.com/embed/NKJc-qEDrXQ" frameborder="0" allowfullscreen></iframe></h1>
+
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<!-- <div class="card flex-fill w-100"> -->
+								<!-- <div class="card-header">
+
+									<h5 class="card-title mb-0">Video Tutorials</h5>
+								</div> -->
+
+								
+								<!-- <div class="row"> -->
+									  <!-- <div class="video-wrapper">
+										<iframe src="https://www.youtube.com/embed/T9-Ye3Vdlos" frameborder="0" allowfullscreen></iframe>
+									  </div>
+									  <div class="video-wrapper">
+										<iframe src="https://www.youtube.com/embed/T9-Ye3Vdlos"></iframe>
+									  </div> -->
+								  <!-- </div> -->
+						<!-- </div> -->
+					</div>
+
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-start">
+							<p class="mb-0">
+								<a class="text-muted" href="https://whasallsoftware.com/" target="_blank"><strong>Whatsall</strong></a> &copy;
+							</p>
+						</div>
+						<div class="col-6 text-end">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://whasallsoftware.com/contact" target="_blank">Support</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://whasallsoftware.com/faqs" target="_blank">Help Center</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://whatsallsoftware.com/privacy-policy" target="_blank">Privacy</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://whasallsoftware.com/terms-and-conditions" target="_blank">Terms</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<script src="../../js/util/load-url.js"></script>
+
+	<script src="../../js/pages/app.js"></script>
+	<script src="../../js/pages/home.js"></script>
+	<!-- <script>require("../renderer.js")</script> -->
+</body>
+</html>

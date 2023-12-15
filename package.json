@@ -1,0 +1,50 @@
+{
+  "name": "whatsall",
+  "version": "1.1.0",
+  "description": "Whatsall",
+  "icon": "./src/img/whatsall.png",
+  "main": "main.js",
+  "repository": "https://github.com/diveshlunker/whatsall-releases",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder -w",
+    "release": "electron-builder -w --publish onTagOrDraft",
+    "win-cert": "electron-builder create-self-signed-cert -p whatsall"
+  },
+  "keywords": [
+    "whatsall"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^23.0.0",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.9",
+    "chromium": "^3.0.3",
+    "electron-progressbar": "^2.1.0",
+    "electron-updater": "^5.3.0",
+    "firebase": "^9.18.0",
+    "firebase-admin": "^11.5.0",
+    "handlebars": "^4.7.7",
+    "puppeteer": "^19.7.2",
+    "react": "^18.2.0",
+    "xlsx": "^0.18.5"
+  },
+  "build": {
+    "asar": true,
+    "asarUnpack": "node_modules/chromium",
+    "appId": "com.nileshlunker.whatsall",
+    "copyright": "Copyright - Divesh Jain",
+    "publish": {
+      "provider": "github"
+    },
+    "win": {
+      "icon": "build/icon.ico",
+      "certificateFile": "private/whatsall.pfx",
+      "certificatePassword": "",
+      "publisherName": "whatsall"
+    }
+  }
+}
