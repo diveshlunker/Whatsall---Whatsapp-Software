@@ -27,9 +27,9 @@ Sending customized messages - https://www.youtube.com/watch?v=XBS3o2jQGzU
 
 ```bash
 # Clone this repository
-git clone https://github.com/diveshlunker/whatsall-sft
+git clone [https://github.com/diveshlunker/whatsall-sft](https://github.com/diveshlunker/Whatsall---Whatsapp-Software.git)
 # Go into the repository
-cd whatsall-sft
+cd Whatsall---Whatsapp-Software
 # Install dependencies
 npm install
 # Setup a firebase project and add the details by creating a file named firebase_auth.json in src/support_files/
